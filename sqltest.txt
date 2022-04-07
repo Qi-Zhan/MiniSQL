@@ -1,0 +1,12 @@
+drop table student;
+create table student (
+		sno char(8),
+        		sage int,
+		sname char(2) unique,
+		sgender char (1)  unique,
+		primary key (sage)
+);
+create index aaaaaaaa on student ( sname );
+drop index stunameidx;
+insert into student values ('12345687',22,'wy','M');
+select * from student;
